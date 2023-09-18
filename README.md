@@ -1,1 +1,1 @@
-# procrastinate
+# Procrastinate: My first JS practice.
