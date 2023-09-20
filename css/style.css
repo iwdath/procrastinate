@@ -33,9 +33,9 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
@@ -56,14 +56,14 @@ body {
 	box-sizing: border-box;
 	font-size: 14px;
 	text-align: center;
-	-webkit-transition: opacity 0.2s;
-	-o-transition: opacity 0.2s;
-	transition: opacity 0.2s;
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
 	cursor: pointer;
 }
 
 .button:hover {
-	opacity: 0.5;
+	opacity: .5;
 }
 
 .image {
@@ -84,4 +84,23 @@ body {
 	bottom: 36px;
 	margin: 0;
 	font-size: 16px;
+}
+
+@media screen and (max-width: 380px) {
+	body {
+		padding: 36px 20px;
+	}
+
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.button {
+		margin-top: 10px;
+	}
+
+	.image {
+		width: 90%;
+	}
 }
