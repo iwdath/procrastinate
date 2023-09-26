@@ -1,11 +1,15 @@
 @font-face {
-	src: url(../fonts/SuisseIntl-Book.woff);
+	src:
+		url(../fonts/SuisseIntl-Book.woff2),
+		url(../fonts/SuisseIntl-Book.woff);
 	font-family: Suisse;
 	font-weight: normal;
 }
 
 @font-face {
-	src: url(../fonts/SuisseIntl-Bold.woff);
+	src:
+		url(../fonts/SuisseIntl-Bold.woff2),
+		url(../fonts/SuisseIntl-Bold.woff);
 	font-family: Suisse;
 	font-weight: bold;
 }
@@ -14,6 +18,10 @@ html {
 	margin: 0;
 	height: 100%;
 	-webkit-font-smoothing: antialiased;
+}
+
+html::-webkit-scrollbar {
+	display: none;
 }
 
 body {
@@ -62,10 +70,6 @@ body {
 	cursor: pointer;
 }
 
-.button:hover {
-	opacity: .5;
-}
-
 .image {
 	display: block;
 	margin: 60px auto 50px;
@@ -79,11 +83,23 @@ body {
 	line-height: 1.1;
 }
 
+.title {
+	-webkit-transition: all .5s ease-in-out 0s;
+	-o-transition: all .5s ease-in-out 0s;
+	transition: all .5s ease-in-out 0s;
+}
+
 .footer {
 	position: absolute;
 	bottom: 36px;
 	margin: 0;
 	font-size: 16px;
+}
+
+@media (hover: hover) {
+	.button:hover {
+		opacity: .5;
+	}
 }
 
 @media screen and (max-width: 380px) {

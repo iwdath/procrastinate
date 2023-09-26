@@ -11,8 +11,14 @@ let phrases = [
 	{ text: 'Юрий Дудь', image: 'img/4.png' }
 ];
 
+let previousIndex = -1;
+
 function getRandomElement(arr) {
 	let randIndex = Math.floor(Math.random() * arr.length);
+	while(randIndex === previousIndex) {
+		randIndex = Math.floor(Math.random() * arr.length);
+	}
+	previousIndex = randIndex;
 	return arr[randIndex];
 }
 
