@@ -1,127 +1,127 @@
 @font-face {
-	src:
-		url(../fonts/SuisseIntl-Book.woff2),
-		url(../fonts/SuisseIntl-Book.woff);
-	font-family: Suisse;
-	font-weight: normal;
+  src:
+    url(../fonts/SuisseIntl-Book.woff2),
+    url(../fonts/SuisseIntl-Book.woff);
+  font-family: Suisse;
+  font-weight: normal;
 }
 
 @font-face {
-	src:
-		url(../fonts/SuisseIntl-Bold.woff2),
-		url(../fonts/SuisseIntl-Bold.woff);
-	font-family: Suisse;
-	font-weight: bold;
+  src:
+    url(../fonts/SuisseIntl-Bold.woff2),
+    url(../fonts/SuisseIntl-Bold.woff);
+  font-family: Suisse;
+  font-weight: bold;
 }
 
 html {
-	margin: 0;
-	height: 100%;
-	-webkit-font-smoothing: antialiased;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 html::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 body {
-	position: relative;
-	margin: 0 auto;
-	padding: 36px;
-	min-height: 100%;
-	max-width: 540px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: Suisse, sans-serif;
-	color: white;
-	background-color: #323131;
+  position: relative;
+  margin: 0 auto;
+  padding: 36px;
+  min-height: 100%;
+  max-width: 540px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Suisse, sans-serif;
+  color: white;
+  background-color: #323131;
 }
 
 .header {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .logo {
-	margin: 0;
-	font-weight: bold;
-	font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .button {
-	border: 1px solid white;
-	padding-top: 10px;
-	width: 130px;
-	height: 40px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-size: 14px;
-	text-align: center;
-	-webkit-transition: opacity .3s;
-	-o-transition: opacity .3s;
-	transition: opacity .3s;
-	cursor: pointer;
+  border: 1px solid white;
+  padding-top: 10px;
+  width: 130px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+  cursor: pointer;
 }
 
 .image {
-	display: block;
-	margin: 60px auto 50px;
-	width: 80%;
+  display: block;
+  margin: 60px auto 50px;
+  width: 80%;
 }
 
 .advice {
-	margin-bottom: 70px;
-	font-weight: bold;
-	font-size: 42px;
-	line-height: 1.1;
+  margin-bottom: 70px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.1;
 }
 
 .title {
-	-webkit-transition: all .5s ease-in-out 0s;
-	-o-transition: all .5s ease-in-out 0s;
-	transition: all .5s ease-in-out 0s;
+  -webkit-transition: all .5s ease-in-out 0s;
+  -o-transition: all .5s ease-in-out 0s;
+  transition: all .5s ease-in-out 0s;
 }
 
 .footer {
-	position: absolute;
-	bottom: 36px;
-	margin: 0;
-	font-size: 16px;
+  position: absolute;
+  bottom: 36px;
+  margin: 0;
+  font-size: 16px;
 }
 
 @media (any-hover: hover) {
-	.button:hover {
-		opacity: .5;
-	}
+  .button:hover {
+    opacity: .5;
+  }
 }
 
 @media screen and (max-width: 380px) {
-	body {
-		padding: 36px 20px;
-	}
+  body {
+    padding: 36px 20px;
+  }
 
-	.header {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-webkit-box-align: start;
-		-ms-flex-align: start;
-		align-items: flex-start;
-	}
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 
-	.button {
-		margin-top: 10px;
-	}
+  .button {
+    margin-top: 10px;
+  }
 
-	.image {
-		width: 90%;
-	}
+  .image {
+    width: 90%;
+  }
 }
