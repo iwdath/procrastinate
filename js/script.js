@@ -11,7 +11,7 @@ let phrases = [
   { text: 'Юрий Дудь', image: 'img/4.png' }
 ];
 
-let previousIndex = -1;
+let previousIndex = 2;
 
 function getRandomElement(arr) {
   let randIndex = Math.floor(Math.random() * arr.length);
@@ -39,7 +39,7 @@ button.addEventListener('click', function () {
   }
 });
 
-for (let i = 0; i <= 2; i = i + 1) {
+for (let i = 0; i <= 2; i++) {
   smoothly(phrase, 'textContent', phrases[i].text);
   smoothly(image, 'src', phrases[i].image);
 }
