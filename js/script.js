@@ -1,3 +1,29 @@
+function watchForHover() {
+  let lastTouchTime = 0;
+
+  function enableHover() {
+    if (new Date() - lastTouchTime < 500) return;
+    document.body.classList.add('has-hover');
+  };
+
+  function disableHover() {
+    document.body.classList.remove('has-hover');
+  };
+
+  function updateLastTouchTime() {
+    lastTouchTime = new Date();
+  };
+
+  document.addEventListener('touchstart', updateLastTouchTime, true);
+  document.addEventListener('touchstart', disableHover, true);
+  document.addEventListener('mousemove', enableHover, true);
+
+  enableHover();
+}
+
+watchForHover();
+
+
 let phrases = [
   { text: 'отправить другу смешную гифку', image: 'img/1.gif' },
   { text: 'разобраться, о чём поют рэперы', image: 'img/3.png' },
@@ -15,10 +41,13 @@ let previousIndex = 2;
 
 function getRandomElement(arr) {
   let randIndex = Math.floor(Math.random() * arr.length);
+
   while (randIndex === previousIndex) {
     randIndex = Math.floor(Math.random() * arr.length);
-  }
+  };
+
   previousIndex = randIndex;
+
   return arr[randIndex];
 }
 
@@ -29,6 +58,7 @@ let image = document.querySelector('.image');
 
 button.addEventListener('click', function () {
   let randomElement = getRandomElement(phrases);
+
   smoothly(phrase, 'textContent', randomElement.text);
   smoothly(image, 'src', randomElement.image);
 
@@ -36,10 +66,10 @@ button.addEventListener('click', function () {
     advice.style.fontSize = '33px';
   } else {
     advice.style.fontSize = '42px';
-  }
+  };
 });
 
 for (let i = 0; i <= 2; i++) {
   smoothly(phrase, 'textContent', phrases[i].text);
   smoothly(image, 'src', phrases[i].image);
-}
+};

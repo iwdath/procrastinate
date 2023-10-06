@@ -70,6 +70,10 @@ body {
   cursor: pointer;
 }
 
+body.has-hover .button:hover {
+  opacity: .5;
+}
+
 .image {
   display: block;
   margin: 60px auto 50px;
@@ -94,12 +98,6 @@ body {
   bottom: 36px;
   margin: 0;
   font-size: 16px;
-}
-
-@media (any-hover: hover) {
-  .button:hover {
-    opacity: .5;
-  }
 }
 
 @media screen and (max-width: 380px) {
