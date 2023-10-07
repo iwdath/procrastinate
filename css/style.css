@@ -57,13 +57,10 @@ body {
 
 .button {
   border: 1px solid white;
-  padding-top: 10px;
-  width: 130px;
-  height: 40px;
+  padding: 10px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 14px;
-  text-align: center;
   -webkit-transition: opacity .3s;
   -o-transition: opacity .3s;
   transition: opacity .3s;
@@ -88,9 +85,19 @@ body.has-hover .button:hover {
 }
 
 .title {
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1em;
   -webkit-transition: all .5s ease-in-out 0s;
   -o-transition: all .5s ease-in-out 0s;
   transition: all .5s ease-in-out 0s;
+}
+
+.phrase {
+  display: inline;
+  margin: 0;
+  font-size: 1em;
 }
 
 .footer {
