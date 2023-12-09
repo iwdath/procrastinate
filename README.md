@@ -1,1 +1,0 @@
-# Procrastinate: practice #5 [Responsive Web, JS]
