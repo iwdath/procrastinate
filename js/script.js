@@ -20,7 +20,7 @@ function watchForHover() {
   document.addEventListener('mousemove', enableHover, true);
 
   enableHover();
-}
+};
 
 watchForHover();
 
@@ -51,7 +51,7 @@ function getRandomElement(arr) {
   previousIndex = randIndex;
 
   return arr[randIndex];
-}
+};
 
 let button = document.querySelector('.button');
 let phrase = document.querySelector('.phrase');
